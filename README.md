@@ -22,3 +22,5 @@ This just takes whatever single range that is active on the sheet and sets all t
 
 <b>Passive Functionality:</b>
 AtEdit:  This function gets triggered whenever the onEdit() function is triggered.  When someone makes an edit to the sheet, it checks to see if the column that was edited was the "Disposition" column.  If not, it checks to see if column 2, 3, 4, or 5 were edited instead to uppercase any edits in those columns.  If column 11 was edited, then it checks to see if it was edited to say "Disposed".  If it was, then that row is hidden on the sheet.
+
+Note: There needs to be a trigger added through Google Sheets UI choosing to run atEdit when the onEdit event is run.
